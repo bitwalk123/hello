@@ -19,7 +19,7 @@ class HelloWorld(QWidget):
 
         label = QLabel('こんにちは、世界！')
         font = QFont()
-        font.setPointSize(12)
+        font.setPointSize(24)
         label.setFont(font)
         label.setAlignment(QtCore.Qt.AlignCenter)
 
