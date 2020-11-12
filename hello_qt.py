@@ -2,21 +2,21 @@
 # coding: utf-8
 
 import sys
-from PyQt5 import QtCore
-from PyQt5.QtGui import QFont
-from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
+from PySide2 import QtCore
+from PySide2.QtGui import QFont, QIcon
+from PySide2.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 
 
 class HelloWorld(QWidget):
 
     def __init__(self):
         super().__init__()
+        self.setWindowIcon(QIcon('qt.png'))
+        self.setWindowTitle('Hello, World!')
         self.initUI()
         self.show()
 
     def initUI(self):
-        self.setWindowTitle('Hello, World!')
-
         label = QLabel('こんにちは、世界！')
         font = QFont()
         font.setPointSize(24)
